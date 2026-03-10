@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vigneshwaran S – Developer & Robotics Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ═══════════════════════════ CURSOR ═══════════════════════════ -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ═══════════════════════════ SCROLL PROGRESS ═══════════════════ -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ═══════════════════════════ PAGE LOADER ════════════════════════ -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-logo">VICKY</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════ NAVBAR ════════════════════════════ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">VICKY<span class="dot"></span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════════ HERO ══════════════════════════════ -->
+  <section id="hero" class="hero">
+    <div class="particles" id="particles"></div>
+    <div class="hero-content">
+      <div class="hero-left reveal-left">
+        <p class="hero-greeting">👋 Hello, I'm</p>
+        <h1 class="hero-name">Vigneshwaran <br/><span class="name-accent"></span></h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span class="typewriter" id="typewriter"></span>
+          <span class="cursor-blink">|</span>
+        </div>
+        <p class="hero-tagline">"Building intelligent systems & immersive web experiences."</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <span>View Projects</span>
+            <i class="fas fa-arrow-right"></i>
+          </a>
+          <a href="assets/VICKYS-Resume.pdf" download class="btn btn-outline">
+            <span>Download Resume</span>
+            <i class="fas fa-download"></i>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat"><span class="stat-num">8</span><span class="stat-label">Months Exp</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">10+</span><span class="stat-label">Projects</span></div>
+          <div class="stat-divider"></div>
+          <div class="stat"><span class="stat-num">2</span><span class="stat-label">Domains</span></div>
+        </div>
+      </div>
+      <div class="hero-right reveal-right">
+        <div class="hero-visual">
+          <div class="orbit-ring ring-1"></div>
+          <div class="orbit-ring ring-2"></div>
+          <div class="orbit-ring ring-3"></div>
+          <div class="glow-circle"></div>
+          <div class="code-snippet snippet-1">
+            <span class="code-line"><span class="c-blue">const</span> <span class="c-green">dev</span> = {</span>
+            <span class="code-line">&nbsp; name: <span class="c-yellow">"Vigneshwaran"</span>,</span>
+            <span class="code-line">&nbsp; role: <span class="c-yellow">"Web Development"</span>,</span>
+            <span class="code-line">}</span>
+          </div>
+          <div class="code-snippet snippet-2">
+            <span class="code-line"><span class="c-blue">while</span>(alive) {</span>
+            <span class="code-line">&nbsp; eat(); sleep();</span>
+            <span class="code-line">&nbsp; <span class="c-green">code()</span>;</span>
+            <span class="code-line">}</span>
+          </div>
+          <div class="float-badge badge-1"><i class="fab fa-react"></i> React</div>
+          <div class="float-badge badge-2"><i class="fab fa-python"></i> Python</div>
+          <div class="float-badge badge-3"><i class="fas fa-microchip"></i> IoT</div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <p>Scroll Down</p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ ABOUT ═════════════════════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Get To Know</p>
+        <h2 class="section-title">About <span class="accent">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-image reveal-left">
+          <div class="image-frame">
+            <div class="image-placeholder">
+              <div class="avatar-initials">VICKY</div>
+              <div class="avatar-glow"></div>
+            </div>
+            <div class="image-decoration dec-1"></div>
+            <div class="image-decoration dec-2"></div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <div class="terminal-box">
+            <div class="terminal-header">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">terminal</span>
+            </div>
+            <div class="terminal-body" id="terminalBody">
+              <p class="t-line"><span class="t-prompt">~$ </span><span class="t-cmd" id="termCmd"></span></p>
+              <p class="t-output" id="termOutput"></p>
+            </div>
+          </div>
+          <p class="about-para">
+            I'm <strong>Vigneshwaran S</strong>, a passionate developer who bridges the gap between the physical and digital world. 
+            With expertise spanning Web Development, IoT Systems, and Robotics Engineering, I craft solutions that are not just functional — but transformative.
+          </p>
+          <p class="about-para">
+            I believe in building systems that <em>think</em>, interfaces that <em>inspire</em>, and experiences that <em>resonate</em>. 
+            From smart sensors to stunning UIs, I engineer each layer with obsessive precision.
+          </p>
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-code"></i>
+              <span>Web Architecture</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-microchip"></i>
+              <span>IoT Systems</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-robot"></i>
+              <span>Robotics</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-palette"></i>
+              <span>UI/UX Design</span>
+            </div>
+          </div>
+          <div class="about-actions">
+            <a href="#contact" class="btn btn-primary"><span>Let's Talk</span><i class="fas fa-paper-plane"></i></a>
+            <a href="#projects" class="btn btn-ghost"><span>My Work</span><i class="fas fa-briefcase"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SKILLS ════════════════════════════ -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I Know</p>
+        <h2 class="section-title">My <span class="accent">Skills</span></h2>
+      </div>
+      <div class="skills-tabs">
+        <button class="tab-btn active" data-tab="web">💻 Web Dev</button>
+        <button class="tab-btn" data-tab="iot">🤖 IoT & Robotics</button>
+        <button class="tab-btn" data-tab="tools">🛠 Tools</button>
+      </div>
+      <div class="skills-panels">
+        <div class="skills-panel active" id="tab-web">
+          <div class="skills-grid">
+            <div class="skill-card reveal-up" data-skill="HTML5" data-level="95">
+              <div class="skill-icon"><i class="fab fa-html5"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">HTML5</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                <span class="skill-percent">95%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-skill="CSS3" data-level="90">
+              <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">CSS3 / SCSS</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                <span class="skill-percent">90%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-skill="JavaScript" data-level="85">
+              <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">JavaScript</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                <span class="skill-percent">85%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-skill="React" data-level="80">
+              <div class="skill-icon"><i class="fab fa-react"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">React.js</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+                <span class="skill-percent">80%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-skill="Node.js" data-level="75">
+              <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Node.js</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+                <span class="skill-percent">75%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up" data-skill="Python" data-level="78">
+              <div class="skill-icon"><i class="fab fa-python"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Python</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+                <span class="skill-percent">78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-panel" id="tab-iot">
+          <div class="skills-grid">
+            <div class="skill-card reveal-up">
+              <div class="skill-icon iot-icon"><i class="fas fa-microchip"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Arduino</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                <span class="skill-percent">90%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up">
+              <div class="skill-icon iot-icon"><i class="fas fa-broadcast-tower"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Sensors & Actuators</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                <span class="skill-percent">88%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up">
+              <div class="skill-icon iot-icon"><i class="fas fa-code"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Embedded C</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+                <span class="skill-percent">82%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up">
+              <div class="skill-icon iot-icon"><i class="fas fa-robot"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Robotics Systems</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                <span class="skill-percent">85%</span>
+              </div>
+            </div>
+            <div class="skill-card reveal-up">
+              <div class="skill-icon iot-icon"><i class="fab fa-python"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">Python (IoT)</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="78"></div></div>
+                <span class="skill-percent">78%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-panel" id="tab-tools">
+          <div class="skills-grid">
+            <div class="skill-card reveal-up">
+              <div class="skill-icon tools-icon"><i class="fas fa-terminal"></i></div>
+              <div class="skill-info">
+                <span class="skill-name">VS Code</span>
+                <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                <span class="skill-percent">95%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ PROJECTS ══════════════════════════ -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My Work</p>
+        <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
+      </div>
+
+      <!-- Featured Project -->
+      <div class="featured-project reveal-up">
+        <div class="fp-badge">⭐ Featured</div>
+        <div class="fp-content">
+          <div class="fp-info">
+            <h3 class="fp-title">Greenora <span>– Plant eCommerce Store</span></h3>
+            <p class="fp-desc">A modern, fully animated eCommerce platform for plant lovers. Built with React and Firebase, featuring a dynamic cart system, wishlist, search, and seamless checkout experience with stunning UI animations.</p>
+            <div class="fp-stack">
+              <span>React</span><span>Firebase</span><span>Node.js</span><span>CSS3</span>
+            </div>
+            <div class="fp-actions">
+              <a href="#" class="btn btn-primary btn-sm"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+              <a href="#" class="btn btn-outline btn-sm"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+          </div>
+          <div class="fp-visual">
+            <div class="fp-mockup">
+              <div class="mockup-bar">
+                <span></span><span></span><span></span>
+              </div>
+              <div class="mockup-screen">
+                <div class="mock-content">
+                  <div class="mock-nav"></div>
+                  <div class="mock-hero-area">
+                    <div class="mock-text-block"></div>
+                    <div class="mock-text-block short"></div>
+                    <div class="mock-btn-row"><div class="mock-btn"></div><div class="mock-btn ghost"></div></div>
+                  </div>
+                  <div class="mock-cards">
+                    <div class="mock-card"></div>
+                    <div class="mock-card"></div>
+                    <div class="mock-card"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project Cards -->
+      <div class="projects-grid">
+        <div class="project-card reveal-up" style="--delay:0s">
+          <div class="project-img">
+            <div class="project-placeholder">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-name">Autonomous Robot Navigator</h4>
+            <p class="project-desc">A robotics project with obstacle avoidance, path planning and real-time telemetry via Raspberry Pi.</p>
+            <div class="project-tags">
+              <span>Raspberry Pi</span><span>Python</span><span>OpenCV</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.1s">
+          <div class="project-img">
+            <div class="project-placeholder blue">
+              <i class="fas fa-home"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-name">Smart Home Dashboard</h4>
+            <p class="project-desc">IoT dashboard to control and monitor home appliances using Arduino, ESP8266, and Firebase Realtime DB.</p>
+            <div class="project-tags">
+              <span>Arduino</span><span>ESP8266</span><span>Firebase</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.2s">
+          <div class="project-img">
+            <div class="project-placeholder purple">
+              <i class="fas fa-globe"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-name">Dev Portfolio v1</h4>
+            <p class="project-desc">First-generation personal portfolio with custom animations, dark mode, and responsive design.</p>
+            <div class="project-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.3s">
+          <div class="project-img">
+            <div class="project-placeholder green">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-name">AgriSense IoT System</h4>
+            <p class="project-desc">Smart agriculture monitoring with soil sensors, weather data analysis, and automated irrigation control.</p>
+            <div class="project-tags">
+              <span>IoT</span><span>Sensors</span><span>Node.js</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.4s">
+          <div class="project-img">
+            <div class="project-placeholder orange">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-name">SafeGuard Security Bot</h4>
+            <p class="project-desc">Autonomous security robot with motion detection, facial recognition, and SMS/app alert integration.</p>
+            <div class="project-tags">
+              <span>Python</span><span>OpenCV</span><span>Robotics</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" style="--delay:0.5s">
+          <div class="project-img">
+            <div class="project-placeholder cyan">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <div class="project-overlay">
+              <a href="#" class="btn btn-sm btn-primary"><i class="fas fa-external-link-alt"></i></a>
+              <a href="#" class="btn btn-sm btn-outline"><i class="fab fa-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <h4 class="project-name">Analytics Dashboard UI</h4>
+            <p class="project-desc">Beautiful real-time analytics dashboard with charts, filters, dark mode, and live data integration.</p>
+            <div class="project-tags">
+              <span>React</span><span>Chart.js</span><span>API</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ EXPERIENCE ════════════════════════ -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">My Journey</p>
+        <h2 class="section-title">Work <span class="accent">Experience</span></h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal-up" style="--delay:0s">
+          <div class="timeline-dot">
+            <div class="dot-pulse"></div>
+          </div>
+          <div class="timeline-date">2026</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h4>Robotics Developer</h4>
+              <span class="tc-company"><i class="fas fa-building"></i> Tri Stone Industries</span>
+            </div>
+            <p class="tc-desc">Developed and deployed autonomous robotic systems for industrial automation. Integrated sensor arrays, motor controllers, and real-time monitoring dashboards.</p>
+            <div class="tc-tags">
+              <span>Robotics</span><span>Python</span><span>Embedded C</span><span>ROS</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" style="--delay:0.15s">
+          <div class="timeline-dot">
+            <div class="dot-pulse"></div>
+          </div>
+          <div class="timeline-date">2026</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h4>Frontend Developer</h4>
+              <span class="tc-company"><i class="fas fa-building"></i> Freelance / Independent </span>
+            </div>
+            <p class="tc-desc">Designed and developed responsive web applications for clients across multiple domains. Focused on performant, accessible, and visually stunning interfaces.</p>
+            <div class="tc-tags">
+              <span>React</span><span>JavaScript</span><span>UI/UX</span><span>CSS3</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" style="--delay:0.3s">
+          <div class="timeline-dot">
+            <div class="dot-pulse"></div>
+          </div>
+          <div class="timeline-date">2025</div>
+          <div class="timeline-card">
+            <div class="tc-header">
+              <h4>Python With AI Intern</h4>
+              <span class="tc-company"><i class="fas fa-building"></i> Galwin Technolaogy </span>
+            </div>
+            <p class="tc-desc">Successfully completed a 1-month Python with AI internship, gaining practical experience in machine learning, data handling, and AI-based solution development..</p>
+            <div class="tc-tags">
+              <span>Python</span><span>Machine Learning</span><span>AI Fundamentals</span><span>Data Handling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ SERVICES ══════════════════════════ -->
+  <section id="services" class="services section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I Offer</p>
+        <h2 class="section-title">My <span class="accent">Services</span></h2>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" style="--delay:0s">
+          <div class="service-icon-wrap">
+            <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          </div>
+          <h4>Website Development</h4>
+          <p>Modern, responsive websites and web applications built with the latest frameworks, optimized for performance and user experience.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> React / Next.js Apps</li>
+            <li><i class="fas fa-check"></i> REST API Integration</li>
+            <li><i class="fas fa-check"></i> Responsive Design</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-up" style="--delay:0.1s">
+          <div class="service-icon-wrap">
+            <div class="service-icon iot"><i class="fas fa-wifi"></i></div>
+          </div>
+          <h4>IoT Product Development</h4>
+          <p>End-to-end IoT solutions from hardware prototyping to cloud integration, creating smart connected devices and systems.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Sensor Integration</li>
+            <li><i class="fas fa-check"></i> Cloud Dashboards</li>
+            <li><i class="fas fa-check"></i> Real-time Monitoring</li>
+          </ul>
+        </div>
+        <div class="service-card reveal-up" style="--delay:0.2s">
+          <div class="service-icon-wrap">
+            <div class="service-icon robot"><i class="fas fa-robot"></i></div>
+          </div>
+          <h4>Robotics Prototyping</h4>
+          <p>Custom robotics solutions for automation, research, and industry. From concept to functional prototype with precision engineering.</p>
+          <ul class="service-list">
+            <li><i class="fas fa-check"></i> Autonomous Systems</li>
+            <li><i class="fas fa-check"></i> Motor & Sensor Control</li>
+            <li><i class="fas fa-check"></i> Navigation Algorithms</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ MARQUEE ═══════════════════════════ -->
+  <section class="marquee-section">
+    <div class="marquee-wrapper">
+      <div class="marquee-track" id="marqueeTrack">
+        <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="marquee-item"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="marquee-item"><i class="fab fa-react"></i> React</div>
+        <div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+        <div class="marquee-item"><i class="fas fa-microchip"></i> Arduino</div>
+        <div class="marquee-item"><i class="fab fa-raspberry-pi"></i> Raspberry Pi</div>
+        <div class="marquee-item"><i class="fas fa-robot"></i> IoT</div>
+        <!-- duplicate for seamless loop -->
+        <div class="marquee-item"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="marquee-item"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="marquee-item"><i class="fab fa-js-square"></i> JavaScript</div>
+        <div class="marquee-item"><i class="fab fa-react"></i> React</div>
+        <div class="marquee-item"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="marquee-item"><i class="fab fa-python"></i> Python</div>
+        <div class="marquee-item"><i class="fas fa-microchip"></i> Arduino</div>
+        <div class="marquee-item"><i class="fab fa-raspberry-pi"></i> Raspberry Pi</div>
+        <div class="marquee-item"><i class="fas fa-robot"></i> IoT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Get In Touch</p>
+        <h2 class="section-title">Contact <span class="accent">Me</span></h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Build Something <span class="accent">Amazing</span> Together</h3>
+          <p>Whether you have a project in mind, need a technical consultation, or just want to say hello — my inbox is always open.</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+              <div class="ci-text">
+                <span>Email</span>
+                <a href="mailto:vigneshwaran2782006@gmail.com">vigneshwaran2782006@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div class="ci-text">
+                <span>Location</span>
+                <p>Tamil Nadu, India</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fas fa-clock"></i></div>
+              <div class="ci-text">
+                <span>Availability</span>
+                <p>Open to Opportunities</p>
+              </div>
+            </div>
+          </div>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/ice__boy__vicky" target="_blank" rel="noopener" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-wrap reveal-right">
+          <form class="contact-form" id="contactForm" action="https://formsubmit.co/ajax/vigneshwaran2782006@gmail.com" method="POST">
+            <input type="hidden" name="_captcha" value="false"/>
+            <input type="hidden" name="_subject" value="New Portfolio Contact Message"/>
+            <input type="hidden" name="_template" value="table"/>
+            <div class="form-group">
+              <input type="text" id="name" name="name" required autocomplete="off"/>
+              <label for="name">Your Name</label>
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required autocomplete="off"/>
+              <label for="email">Email Address</label>
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="subject" name="subject" required autocomplete="off"/>
+              <label for="subject">Subject</label>
+              <div class="input-line"></div>
+            </div>
+            <div class="form-group">
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <label for="message">Your Message</label>
+              <div class="input-line"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════ FOOTER ════════════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">VICKY<span class="dot"></span></div>
+          <p>Building intelligent systems & immersive web experiences. One line of code at a time.</p>
+          <div class="social-links">
+            <a href="#" target="_blank" class="social-link" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank" class="social-link" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" target="_blank" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h5>Quick Links</h5>
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h5>Services</h5>
+          <ul>
+            <li><a href="#services">Web Development</a></li>
+            <li><a href="#services">IoT Solutions</a></li>
+            <li><a href="#services">Robotics</a></li>
+            <li><a href="#services">3D Design</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h5>Contact</h5>
+          <p><a href="mailto:vigneshwaran2782006@gmail.com"><i class="fas fa-envelope"></i> vigneshwaran2782006@gmail.com</a></p>
+          <p><a href="tel:+918838876238"><i class="fas fa-phone-alt"></i> +91 8838876238</a></p>
+          <p><i class="fas fa-map-marker-alt"></i> Tamil Nadu, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 <strong>Vigneshwaran S</strong> </p>
+        <a href="#hero" class="back-to-top" id="backToTop" aria-label="Back to top">
+          <i class="fas fa-chevron-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
