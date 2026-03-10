@@ -135,7 +135,7 @@ function applyTheme(theme) {
 
 /* ── TYPEWRITER EFFECT ──────────────────────────────────────────── */
 function initTypewriter() {
-  const roles = ['Software Developer', 'Robotics Developer'];
+  const roles = ['Website Developer', 'Robotics Developer'];
   const el    = document.getElementById('typewriter');
   let roleIdx = 0, charIdx = 0, deleting = false;
 
